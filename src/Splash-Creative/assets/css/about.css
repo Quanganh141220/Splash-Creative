@@ -1,0 +1,944 @@
+.about-hero .content .heading {
+  max-width: 785px;
+  letter-spacing: -2.4px;
+}
+
+.about-hero.cs-hero .cs-hero-main {
+  padding-bottom: 40px;
+}
+
+.about-hero.cs-hero .content {
+  margin-bottom: 146px;
+}
+
+.cs-hero .mini-text {
+  letter-spacing: 0;
+  font-family: 'PP Supply Mono';
+  line-height: 1.125;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  gap: 5px;
+}
+
+.content-bottom .hero-statement {
+  font-weight: 500;
+  font-size: 80px;
+  max-width: 760px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: -2.4px;
+}
+
+/* =========================
+   ABOUT BELIEVE
+========================= */
+.about-believe {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+.about-believe .container {
+  height: 100vh;
+  max-width: unset;
+}
+
+.about-believe .believe-layout {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.believe-text {
+  position: absolute;
+  color: #fff;
+  font-family: 'PP Neue Montreal';
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.6px;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.believe-top-left {
+  top: 21.7%;
+  left: 19.3%;
+  z-index: 2;
+}
+
+.believe-bottom-left {
+  bottom: 21.5%;
+  left: 25.1%;
+  z-index: 2;
+}
+
+.believe-right {
+  top: 41%;
+  right: 16.5%;
+  text-align: left;
+  z-index: 2;
+}
+
+.believe-video-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.believe-video-inner {
+  max-width: 760px;
+  max-width: 100%;
+  will-change: transform;
+}
+
+.believe-video {
+  position: relative;
+  width: 100%;
+}
+
+.believe-preview {
+  width: 100%;
+  display: block;
+}
+
+.believe-play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  top: 65px;
+}
+
+.believe-video.is-playing .believe-play {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.believe-play img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* About Typing Section  */
+.about-typing {
+  padding-top: 50px;
+}
+
+.about-typing .typing-heading .subheading {
+  margin-right: 20px;
+  position: relative;
+  top: 9px;
+}
+
+.about-typing .typing-heading {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-typing .about-stats .col-4 {
+  justify-content: space-between;
+}
+
+.home-about .about-stats .col {
+  margin: 0;
+}
+
+.home-about .about-stats .col-1 {
+  padding-bottom: 133px;
+}
+
+.home-about .about-stats .col-2 {
+  padding-bottom: 20px;
+}
+
+.home-about .about-stats .col-3 {
+  padding-bottom: 34px;
+  justify-content: center;
+}
+
+.about-typing .about-stats .col-4 {
+  justify-content: space-between;
+  padding-bottom: 43px;
+  padding-top: 196px;
+}
+
+.about-typing .about-stats .col-4 .stat-item:first-child {
+  margin-left: 20px;
+}
+
+/* Our Story Section */
+.our-story {
+  background: #000;
+  color: #fff;
+  padding: 174px 0 228px;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.our-story .story-header {
+  max-width: 520px;
+}
+
+.our-story .typing-heading .subheading {
+  margin-right: 54px;
+  position: relative;
+  top: 5px;
+  font-family: 'Neue Montreal';
+}
+
+.our-story .typing-heading {
+  max-width: 859px;
+  margin-bottom: 196px;
+}
+
+.our-story .story-intro {
+  color: #fff;
+  font-family: 'PP Neue Montreal';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 661px;
+  margin-left: auto;
+}
+
+.our-story .story-block {
+  max-width: 472px;
+  margin-top: 164px;
+  position: relative;
+}
+
+.our-story .row-1 {
+  margin-right: auto;
+  margin-left: 86px;
+  margin-bottom: 75px;
+}
+
+.our-story .row-2 {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-bottom: 17px;
+}
+
+.our-story .row-3 {
+  margin-top: 0;
+  margin-left: 380px;
+  margin-bottom: 0;
+}
+
+.our-story .story-block .logo {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: -33px;
+  top: 15px;
+}
+
+.our-story .story-block h3 {
+  font-family: 'Neue Montreal';
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -2.4px;
+  margin-bottom: 24px;
+}
+
+.our-story .story-block p {
+  color: #fff;
+  font-family: 'PP Neue Montreal';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  max-width: 380px;
+}
+
+/* ======================Our Team====================  */
+.team-section {
+  background: #000;
+  color: #fff;
+  padding: 79px 0 34px;
+  overflow: hidden;
+}
+
+.team-section .team-heading {
+  color: #fff;
+  font-family: 'Neue Montreal';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.96px;
+}
+
+.team-section .team-marquee {
+  width: 100%;
+  margin-bottom: 107px;
+  margin-top: 40px;
+}
+
+.team-section .team-marquee-track {
+  display: flex;
+  gap: 32px;
+  white-space: nowrap;
+  width: max-content;
+  animation: teamMarquee 18s linear infinite;
+}
+
+.team-section .team-marquee-track span {
+  font-family: 'PP Neue Montreal';
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -2.4px;
+  text-transform: uppercase;
+}
+
+.team-section .team-marquee-logo {
+  height: 86px;
+  width: 81px;
+  margin-top: -6px;
+}
+
+@keyframes teamMarquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.team-section .team-intro {
+  max-width: 575px;
+  text-align: left;
+  margin-left: 37%;
+  margin-bottom: 132px;
+  margin-right: auto;
+}
+
+.team-section .team-intro-title {
+  color: #fff;
+  font-family: 'PP Neue Montreal';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1.6px;
+  margin-bottom: 16px;
+}
+
+.team-section .team-intro-desc {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.team-section .team-list {
+  width: 100%;
+}
+
+.team-section .team-grid {
+  position: relative;
+}
+
+.team-section .team-card {
+  width: calc((100% - 72px) / 4);
+  padding-bottom: 30px;
+}
+
+.team-section .team-photo {
+  width: 100%;
+  background: #222;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.team-section .team-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team-section .team-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.team-section .team-name {
+  color: #fff;
+  font-family: 'PP Neue Montreal';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.team-section .team-role {
+  color: #fff;
+  font-family: 'PP Neue Montreal';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-slider-clients {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* ======================Our Values====================  */
+.values-section {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  background: #000;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 83px;
+  padding-bottom: 382px;
+}
+
+.values-section .value-heading {
+  margin-bottom: 138px;
+  max-width: 545px;
+}
+
+.values-section .value-heading span {
+  margin-right: 53px;
+}
+
+.values-section .values-content {
+  max-width: 1066px;
+  margin-left: 154px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.values-section .values-row {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 73px;
+  width: 100%;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+.values-section .values-row.is-active {
+  pointer-events: auto;
+  color: #fff;
+}
+
+.values-section .values-item {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 25px;
+  transform-origin: left center;
+  will-change: transform, opacity;
+  white-space: nowrap;
+  min-width: 50%;
+}
+
+.values-section .values-no {
+  opacity: 0.5;
+  color: #fff;
+  font-family: 'Neue Montreal';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.values-section .values-text {
+  opacity: 0.5;
+  color: #fff;
+  font-family: 'Neue Montreal';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1.92px;
+  transition: all 0.6s ease;
+}
+
+.values-section .values-row.is-active .values-text {
+  opacity: 1;
+  transition: all 0.6s ease;
+  font-size: 60px;
+  letter-spacing: -2.4px;
+}
+
+.values-section .values-row.is-active .values-no {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.96px;
+}
+
+.values-section .values-desc {
+  flex: 1;
+  max-width: 480px;
+  min-width: 0;
+  margin-top: -3px;
+}
+
+.values-section .values-desc-text {
+  margin: 0;
+  color: #fff;
+  font-family: 'Neue Montreal';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-typing .about-stats .col {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about-page .cs-hero .content-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .content-bottom .hero-statement {
+    font-size: 60px;
+  }
+
+  .believe-right {
+    top: 32%;
+    right: 13.5%;
+  }
+
+  .our-story {
+    padding: 100px 0 100px;
+  }
+
+  .our-story .story-block h3 {
+    font-size: 40px;
+  }
+
+  .our-story .row-3 {
+    margin-left: 20%;
+  }
+
+  .our-story .typing-heading {
+    margin-bottom: 100px;
+  }
+
+  .our-story .story-block {
+    margin-top: 100px;
+  }
+
+  .team-section .team-marquee {
+    margin-bottom: 76px;
+  }
+
+  .team-section .team-intro {
+    max-width: unset;
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+
+  .team-section .team-card {
+    width: calc((100% - 72px) / 3);
+    padding-bottom: 30px;
+  }
+
+  .values-section {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+
+  .values-section .values-content {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 420px;
+  }
+
+  .values-section .values-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .values-section .values-row.is-active {
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  .values-section .values-item {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    gap: 16px;
+  }
+
+  .values-section .values-no {
+    font-size: 18px;
+  }
+
+  .values-section .values-text {
+    font-size: 38px;
+    letter-spacing: -1.4px;
+  }
+
+  .values-section .values-row.is-active .values-text {
+    font-size: 46px;
+    letter-spacing: -1.6px;
+  }
+
+  .values-section .values-desc {
+    max-width: 560px;
+    margin-top: 4px;
+  }
+
+  .values-section .values-desc-text {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.85;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-hero .content .heading {
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.8px;
+  }
+
+  .cs-hero .content-bottom {
+    flex-direction: column;
+  }
+
+  .cs-hero .mini-text {
+    display: none;
+  }
+
+  .content-bottom .hero-statement {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.8px;
+    text-align: left;
+  }
+
+  .about-hero.cs-hero .content {
+    margin-bottom: 322px;
+  }
+
+  .about-hero.cs-hero .cs-hero-main {
+    padding-bottom: 13px;
+  }
+
+  .about-believe {
+    display: none;
+  }
+
+  .about-believe-mobile {
+    display: block;
+    padding: 100px 0;
+    background: #000;
+  }
+
+  .believe-mobile-video-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .believe-mobile-video-inner {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .believe-mobile-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+  }
+
+  .believe-mobile-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .believe-mobile-play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .believe-mobile-play img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .believe-mobile-video.is-playing .believe-mobile-play {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .about-typing .typing-heading .subheading {
+    margin-bottom: 27px;
+  }
+
+  .about-typing .typing-heading {
+    background-size: 27%;
+    background-position: 57% 60%;
+    margin-bottom: 72px;
+  }
+
+  .about-page .stat-item:nth-child(even) {
+    padding-top: 189px;
+  }
+
+  .stat-item:nth-child(4) {
+    padding-top: 228px !important;
+  }
+
+  .stat-item:nth-child(3) {
+    padding-top: 39px;
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  .stat-item:nth-child(1) {
+    padding-left: 5px;
+  }
+
+  .about-page .about-img {
+    position: absolute;
+    top: 168px;
+    left: -96px;
+    z-index: 2;
+  }
+
+  .about-page .home-about .on-mb {
+    position: relative;
+  }
+
+  .about-page .home-about .about-stats-mb {
+    padding-bottom: 48px;
+  }
+
+  .our-story {
+    padding: 83px 0 0;
+  }
+
+  .our-story .typing-heading .subheading {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 22px;
+  }
+
+  .our-story .story-intro {
+    font-size: 16px;
+    max-width: 87%;
+    margin-left: 0;
+  }
+
+  .our-story .typing-heading {
+    margin-bottom: 16px;
+    letter-spacing: 0;
+  }
+
+  .our-story .story-block {
+    margin-top: 62px;
+    margin-left: 44px;
+    margin-bottom: 0;
+  }
+
+  .our-story .story-block .logo {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: -46px;
+    top: 6px;
+  }
+
+  .our-story .story-block h3 {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.64px;
+  }
+
+  .our-story .story-block .story-desc {
+    font-size: 16px;
+    max-width: 294px;
+  }
+
+  .our-story .story-block h3 {
+    margin-bottom: 16px;
+  }
+
+  .team-section {
+    padding: 63px 0 0;
+  }
+
+  .team-section .team-marquee-track span {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .team-section .team-marquee-logo {
+    height: 24px;
+    width: 22px;
+    margin-top: 0;
+  }
+
+  .team-section .team-marquee {
+    margin: 16px 0 55px;
+  }
+
+  .team-section .team-intro-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .team-section .team-intro-desc {
+    font-size: 16px;
+  }
+
+  .team-section .team-intro {
+    margin-left: 46px !important;
+    margin-bottom: 59px;
+  }
+
+  .team-section .team-heading {
+    font-size: 16px;
+  }
+
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 11px;
+    row-gap: 16px;
+  }
+
+  .team-section .team-card {
+    width: calc((100% - 11px) / 2);
+    padding-bottom: 0;
+  }
+
+  .team-section .team-photo {
+    margin-bottom: 8px;
+    max-height: 212px;
+    height: 100%;
+  }
+
+  .team-section .team-photo img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-section .team-name,
+  .team-section .team-role {
+    font-size: 16px;
+  }
+
+  .values-section {
+    padding-top: 60px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .values-section .value-heading {
+    margin-bottom: 438px;
+  }
+
+  .values-section .values-row.is-active .values-no {
+    font-size: 12px;
+  }
+
+  .values-section .values-row.is-active {
+    padding-bottom: 0;
+    gap: 13px;
+  }
+
+  .values-section .values-item {
+    gap: 27px;
+  }
+
+  .values-section .values-row.is-active .values-text {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.28px;
+  }
+
+  .values-section .values-desc {
+    padding-left: 42px;
+    font-size: 16px;
+  }
+
+  .values-section .values-row:not(.is-active) {
+    display: none;
+  }
+
+  .values-section .values-content {
+    overflow: hidden;
+    min-height: 200px;
+    padding-bottom: 0;
+  }
+
+  .values-section .values-row:not(.is-active) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  .about-page .home-clients {
+    padding: 0 0 35px !important;
+  }
+}
