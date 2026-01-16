@@ -1,0 +1,1810 @@
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PPNeueMontreal-Book.woff2') format('woff2'),
+        url('../fonts/PPNeueMontreal-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('../fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+        url('../fonts/PPNeueMontreal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Semibold.woff2') format('woff2'),
+        url('../fonts/Switzer-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Switzer';
+    src: url('../fonts/Switzer-Bold.woff2') format('woff2'),
+        url('../fonts/Switzer-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'PP Supply Mono';
+    src: url('../fonts/Supply-Regular.woff2') format('woff2'),
+        url('../fonts/Supply-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/NeueMontreal-Regular.woff2') format('woff2'),
+        url('../fonts/NeueMontreal-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/NeueMontreal-Medium.woff2') format('woff2'),
+        url('../fonts/NeueMontreal-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/NeueMontreal-Italic.woff2') format('woff2'),
+        url('../fonts/NeueMontreal-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/NeueMontreal-Light.woff2') format('woff2'),
+        url('../fonts/NeueMontreal-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/NeueMontreal-Bold.woff2') format('woff2'),
+        url('../fonts/NeueMontreal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+p:last-child,
+p:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: -0.02em;
+    font-family: 'PP Neue Montreal';
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    font-family: 'PP Neue Montreal';
+    background-color: #101010;
+    color: #fff;
+}
+
+.cs-heading {
+    font-size: 60px;
+    line-height: 1.2;
+    max-width: 680px;
+}
+
+.cs-heading span {
+    font-family: 'Neue Montreal';
+    font-size: 24px;
+    line-height: 1.2;
+    margin-right: 80px;
+    vertical-align: middle;
+    letter-spacing: 0;
+}
+
+.on-mb {
+    display: none !important;
+}
+
+.btn-blur {
+    font-family: 'PP Supply Mono';
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    border-radius: 8px;
+    padding: 7px 15px;
+}
+
+.btn-blur:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+    font-family: 'PP Supply Mono';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: -0.05em;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 11px 31px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    gap: 10px;
+    border: 1px solid #fff;
+}
+
+.btn .text-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.btn .text {
+    display: block;
+    transition: transform .4s ease;
+}
+
+.btn .text-hover {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover .text-default {
+    transform: translateY(-100%);
+}
+
+.btn:hover .text-hover {
+    transform: translateY(-100%);
+}
+
+.btn-secondary {
+    border-color: #000;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cs-hero {
+    padding: 20px;
+    color: #fff;
+}
+
+.cs-hero-main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 140px 0 20px;
+    position: relative;
+
+}
+
+.cs-hero-main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 37.47%, rgba(0, 0, 0, 0.5) 94.29%);
+    pointer-events: none;
+}
+
+.cs-hero .content {
+    position: relative;
+    margin-bottom: 181px;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.cs-hero .cs-hero-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    font-family: 'PP Supply Mono';
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.cs-hero .city {
+    letter-spacing: 0;
+    font-family: 'PP Supply Mono';
+    line-height: 1.125;
+}
+
+.cs-hero .cs-hero-info .info-number {
+    display: flex;
+    text-transform: uppercase;
+    gap: 11px;
+}
+
+.cs-hero .cs-hero-info .info-inner {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.cs-hero .cs-hero-info .line {
+    width: 24px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.cs-hero-box {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    min-height: 140px;
+    display: inline-flex;
+    max-width: 280px;
+    overflow: hidden;
+}
+
+.cs-hero-box .box-content {
+    width: calc(100% - 70px);
+    padding: 15px 14px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cs-hero-box .box-content .text {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-family: 'PP Supply Mono';
+    text-align: left;
+}
+
+.cs-hero-box .box-arrow {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 15px;
+    position: relative;
+}
+
+.cs-hero-box .box-arrow svg {
+    position: relative;
+}
+
+.cs-hero-box .box-arrow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.cs-hero-box:hover .box-arrow {
+    color: #000;
+}
+
+.cs-hero-box:hover .box-arrow::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.cs-hero .content .heading {
+    font-weight: 500;
+    font-size: 80px;
+    max-width: 552px;
+    line-height: 1;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+.cs-hero .content .desc {
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 294px;
+}
+
+.cs-hero .content-bottom {
+    display: flex;
+    gap: 30px;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    z-index: 99;
+    padding: 0 40px;
+
+}
+
+.header-inner {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+}
+
+.header-action {
+    line-height: 0;
+}
+
+.header-logo img {
+    width: 20px;
+}
+
+.header-logo a {
+    font-weight: 600;
+    font-family: 'Switzer';
+    letter-spacing: -0.02em;
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-menu {
+    margin-right: 33px;
+}
+
+.header-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.header-menu ul li a {
+    font-family: 'PP Supply Mono';
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    position: relative;
+}
+
+.header-menu ul li.menu-btn a {
+    font-size: 20px;
+    color: #000;
+    padding: 12px 32px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: none;
+}
+
+.header-menu ul li.menu-btn a::before {
+    display: none;
+}
+
+.header-menu ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #fff;
+    height: 1px;
+}
+
+.header-menu ul li a:hover::before {
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.header-menu ul li.menu-has-count a {
+    margin-right: 15px;
+}
+
+.header-menu ul li a sup {
+    font-size: 10px;
+    letter-spacing: -0.05em;
+    position: absolute;
+    line-height: 1;
+    top: -0.5em;
+}
+
+.menu-toggle {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    display: none;
+}
+
+.menu-toggle span {
+    width: 21px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform .35s ease, opacity .25s ease;
+}
+
+.menu-toggle.is-open span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.menu-toggle.is-open span:nth-child(2) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+.home-about {
+    padding-top: 60px;
+}
+
+.typing-heading {
+    font-size: 60px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 100px;
+}
+
+.typing-fade {
+    color: #878787;
+    display: inline;
+}
+
+.typing-fade span {
+    color: #878787;
+    transition: color 0.3s ease;
+}
+
+
+.typing-heading .subheading {
+    display: inline;
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 1.2;
+    margin-right: 75px;
+    letter-spacing: 0;
+}
+
+
+.home-about .about-content {
+    position: relative;
+}
+
+.home-about .about-content>.inner {
+    max-width: 300px;
+    margin: 0 79px 26px auto;
+}
+
+.home-about .about-content .desc {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.home-about .about-stats {
+    display: flex;
+}
+
+.home-about .about-stats .col {
+    width: 25%;
+    position: relative;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-about .about-stats .col-1 {
+    padding-top: 188px;
+    margin-top: -335px;
+}
+
+.home-about .about-stats .col-2 {
+    width: 26.51%;
+    justify-content: end;
+    margin-top: -275px;
+}
+
+.home-about .about-stats .col-3 {
+    width: 23.49%;
+    padding-top: 190px;
+    margin-top: -107px;
+}
+
+.home-about .about-stats .col-4 {
+    justify-content: end;
+}
+
+.home-about .about-stats .col::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(43, 43, 43, 0) 0%, #2B2B2B 16.83%);
+
+}
+
+.home-about .about-stats .col:last-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(43, 43, 43, 0) 0%, #2B2B2B 16.83%);
+}
+
+.stat-item .number {
+    font-size: 80px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    margin-bottom: 12px;
+}
+
+.stat-item .desc {
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 187px;
+}
+
+.about-img {
+    margin-top: 100px;
+    position: relative;
+    left: -79px;
+}
+
+.featured-work-sec {
+    position: relative;
+}
+
+.featured-work-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+    letter-spacing: 0;
+}
+
+.featured-work-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.fw-image {
+    position: relative;
+    width: 100%;
+    min-height: 850px;
+}
+
+.fw-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 37.47%, rgba(0, 0, 0, 0.7) 94.29%);
+    pointer-events: none;
+    z-index: 3;
+}
+
+.fw-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fw-list {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: calc(100% - 80px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    z-index: 4;
+}
+
+.fw-list .item {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #DADADA;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.fw-list .item span {
+    color: rgba(218, 218, 218, 0.4);
+    margin-left: 19px;
+}
+
+.fw-list .item:hover,
+.fw-list .item.active {
+    color: #fff;
+    font-family: 'PP Neue Montreal';
+    font-weight: 500;
+}
+
+.fw-list .item:last-child span {
+    display: none;
+}
+
+.featured-work-slider .swiper-slide {
+    overflow: hidden;
+}
+
+.featured-work-slider .slide-inner {
+    position: relative;
+}
+
+.featured-work-slider .slide-img {
+    position: relative;
+    height: 600px;
+}
+
+.featured-work-slider .slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-work-slider .slide-title {
+    position: absolute;
+    left: 16px;
+    bottom: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+    z-index: 2;
+    font-family: 'PP Neue Montreal';
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.featured-work-slider .slide-inner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0));
+}
+
+.approach-section-home {
+    padding: 90px 0 100px !important;
+}
+
+.home-sevices-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-sevices-main>.left {
+    width: 37.5%;
+}
+
+.home-sevices-main>.right {
+    width: 62.5%;
+}
+
+.home-sevices .content-item {
+    display: none;
+    height: 100%;
+    position: relative;
+}
+
+.home-sevices .content-item img {
+    width: 100%;
+    height: 600px;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.home-sevices .content-item-text {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    z-index: 2;
+}
+
+.home-sevices .content-item.active {
+    display: block;
+}
+
+.accordion-body {
+    display: none;
+}
+
+.accordion-body .inner {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
+}
+
+.home-sevices .accordion-title {
+    font-size: 24px;
+    line-height: 1;
+    transition: all 0.4s ease;
+    max-width: 60%;
+}
+
+.home-sevices .accordion-content-img {
+    display: none;
+}
+
+.home-sevices .accordion-header .index {
+    display: none;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+    font-family: 'Neue Montreal';
+}
+
+.home-sevices .accordion-item {
+    border-bottom: 1px solid rgba(43, 43, 43, 1);
+    cursor: pointer;
+    padding: 28px 40px 27px 40px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.home-sevices .accordion-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    left: 60%;
+    background-color: #DDDDDD;
+    opacity: 0;
+}
+
+.home-sevices .accordion-item.active::before {
+    opacity: 1;
+}
+
+.home-sevices .accordion-arrow {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 2;
+}
+
+.home-sevices .accordion-body {
+    font-size: 16px;
+    line-height: 1.375;
+    padding-top: 144px;
+    font-family: 'Neue Montreal';
+}
+
+.home-sevices .accordion-body-content {
+    max-width: 367px;
+}
+
+.home-sevices .accordion-body ul {
+    font-size: 20px;
+    line-height: 1.2;
+    list-style: none;
+}
+
+.home-sevices .accordion-body ul li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 14px;
+}
+
+.home-sevices .accordion-body ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.home-sevices .accordion-body ul li:last-child {
+    margin-bottom: 0;
+}
+
+.home-sevices .accordion-body .inner>.left {
+    width: 60.87%;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.home-sevices .accordion-body .inner>.right {
+    width: 39.13%;
+    padding-left: 40px;
+}
+
+.home-sevices .accordion-item.active {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 40px 39px 40px;
+}
+
+.home-sevices .accordion-item.active .accordion-title {
+    font-weight: 500;
+    font-size: 60px;
+    margin-left: 45px;
+}
+
+.home-sevices .accordion-item.active .index {
+    display: block;
+}
+
+.reviews-sec {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews-sec::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.reviews-sec .review-main {
+    padding: 100px 0 61px;
+}
+
+.reviews-sec .review-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 44%;
+    pointer-events: none;
+    background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0) 100%);
+}
+
+.reviews-sec .review-overlay-bottom {
+    background: linear-gradient(0deg, #101010 0%, rgba(16, 16, 16, 0) 100%);
+    height: 34%;
+    top: auto;
+    bottom: 0;
+}
+
+.reviews-sec .review-heading {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.reviews-swiper {
+    margin-right: calc(0px - (calc(100vw - 1520px) / 2));
+}
+
+.reviews-swiper .swiper-slide {
+    display: flex;
+    height: auto;
+}
+
+.reviews-wrapper {
+    padding-top: 60px;
+    position: relative;
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 39px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    position: relative;
+}
+
+.review-card .review-number {
+    position: absolute;
+    top: 40px;
+    right: 28px;
+    z-index: 2;
+    font-size: 16px;
+    font-family: 'PP Supply Mono';
+    line-height: 1.4;
+}
+
+.review-card .quote {
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 74%;
+}
+
+.review-card .review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.review-card .review-footer .author .name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.review-card .review-footer .author .position {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.2;
+    display: block;
+}
+
+.review-card .review-brand img {
+    max-height: 24px;
+}
+
+.reviews-swiper {
+    padding-bottom: 23px;
+}
+
+.reviews-wrapper .swiper-pagination {
+    bottom: 0;
+    top: auto;
+    background-color: #2B2B2B;
+}
+
+.reviews-wrapper .swiper-pagination-progressbar-fill {
+    background-color: #fff;
+}
+
+.reviews-swiper .swiper-pagination-progressbar-fill {
+    background: #fff;
+}
+
+.reviews-wrapper .reviews-arrows {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: -16px;
+    right: 0;
+    z-index: 2;
+}
+
+.clients-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.clients-slider-container .slider-track {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.clients-slider-container .item {
+    margin: 0 30px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.clients-slider-container .item img {
+    object-fit: contain;
+    max-height: 87px;
+}
+
+.home-clients {
+    padding-bottom: 100px;
+    margin-top: -3px;
+}
+
+.insights-sec {
+    padding-bottom: 100px;
+}
+
+.insight-heading {
+    max-width: 446px;
+    margin-bottom: 60px;
+}
+
+.insight-heading span {
+    margin-right: 50px;
+}
+
+.insights-list-pc {
+    border: 1px solid #2B2B2B;
+    display: flex;
+    min-height: 600px;
+}
+
+.insights-list-pc .left {
+    border-right: 1px solid #2B2B2B;
+}
+
+.insights-list-pc .left,
+.insights-list-pc .right {
+    width: 50%;
+}
+
+.insights-list-pc .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.insights-list-pc .right .insights-item {
+    flex: 1;
+}
+
+.insights-list-pc .insights-item {
+    display: block;
+    position: relative;
+    padding: 40px 40px 20px 40px;
+    border-bottom: 1px solid #2B2B2B;
+}
+
+.insights-list-pc .insights-item:last-child {
+    border-bottom: none;
+}
+
+.insights-list-pc .insights-item.large {
+    height: 100%;
+}
+
+.insights-list-pc .insights-item .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.insights-list-pc .insights-item:hover .image {
+    opacity: 1;
+}
+
+.insights-list-pc .insights-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 114px;
+    justify-content: space-between;
+}
+
+.insights-list-pc .insights-content .content-top {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.insights-list-pc .insights-content .content-bottom {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.insights-list-pc .insights-content .title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+    max-width: 392px;
+    letter-spacing: 0;
+}
+
+.insights-list-pc .insights-item.large .title {
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    max-width: 494px;
+}
+
+.insights-list-pc .insights-content .date {
+    font-family: 'PP Supply Mono';
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    vertical-align: middle;
+}
+
+.insights-list-pc .categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 10px 12px;
+}
+
+
+
+.insights-list-pc .insights-readmore {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.insights-list-pc .insights-item:hover .insights-readmore {
+    opacity: 1;
+}
+
+.insights-viewall {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cat-sec {
+    min-height: 800px;
+    background: rgb(243, 166, 243);
+}
+
+.footer-site {
+    padding: 0 20px 20px 20px;
+}
+
+.footer-main {
+    background: #fff;
+    border-radius: 12px;
+    color: #000;
+    padding: 40px 20px;
+}
+
+.footer-main .footer-download .desc {
+    font-family: 'Neue Montreal';
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    max-width: 273px;
+    padding-bottom: 24px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 60px;
+}
+
+.footer-inner .left {
+    width: 52.5%;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 174px;
+}
+
+.footer-inner .right {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 108px;
+}
+
+.footer-logo {
+    font-family: 'Switzer';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    max-width: 370px;
+}
+
+.footer-logo a {
+    display: block;
+}
+
+.footer-right-row {
+    display: flex;
+    max-width: 466px;
+}
+
+.footer-right-row .footer-menus:nth-child(odd) {
+    width: 73.5%;
+    padding-right: 30px;
+}
+
+.footer-right-row .footer-menus:nth-child(even) {
+    width: 26.5%;
+}
+
+.footer-site .footer-title {
+    font-family: 'Neue Montreal';
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 32px;
+    color: #737373;
+}
+
+.footer-site .footer-menus ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-site .footer-menus ul li a {
+    font-family: 'PP Supply Mono';
+    font-size: 16px;
+    line-height: 19px;
+    display: block;
+    letter-spacing: -0.05em;
+}
+
+/* OUR WORK PAGE */
+.our-work-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding: 249px 0 188px;
+}
+
+.our-work-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+.our-work-hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 22%;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, #101010 100%);
+    pointer-events: none;
+}
+
+.our-work-hero-main {
+    position: relative;
+    z-index: 2;
+}
+
+.our-work-hero-heading {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    max-width: 865px;
+    margin: 0 auto 32px;
+}
+
+.our-work-hero-heading span {
+    display: block;
+    margin-top: 8px;
+    text-align: right;
+}
+
+.our-work-hero-desc {
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.our-work-hero-desc p {
+    width: 126%;
+}
+
+.our-work-list-sec {
+    padding-bottom: 100px;
+}
+
+.our-work-list-sec .our-work-filter-pc {
+    justify-content: start;
+    padding-top: 23px;
+    gap: 40px;
+    margin-bottom: 19px;
+}
+
+.our-work-list {}
+
+.our-work-header {
+    font-family: 'PP Supply Mono';
+    padding: 23px 0;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2B2B2B;
+}
+
+.our-work-header-inner {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    gap: 24px;
+}
+
+.our-work-header .col.category {
+    text-align: right;
+}
+
+.our-work-item {
+    padding: 48px 0 47px;
+    border-bottom: 1px solid #2B2B2B;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.our-work-item-images {
+    margin-top: 24px;
+    display: none;
+    overflow: hidden;
+}
+
+.our-work-item-images .inner-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11.5px;
+}
+
+.our-work-item-images img {
+    width: auto;
+    height: 256px;
+}
+
+.our-work-item-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.our-work-item .our-work-name {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.our-work-item .our-work-date {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.our-work-item .category {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'Neue Montreal';
+}
+
+.our-work-item .our-work-categories {
+    max-width: 375px;
+    margin-left: auto;
+}
+
+.our-work-list .col.year {
+    text-align: center;
+}
+
+.our-work-list-pc .our-work-item:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.our-work-list-pc .our-work-item:hover .our-work-name {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.our-work-loadmore {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.our-work-archive-sec {
+    padding-bottom: 52px;
+}
+
+.our-work-archive-title {
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.our-work-archive-list .our-work-item .our-work-date {
+    font-size: 20px;
+}
+
+/* Contact Page CSS */
+.contact-main-sec {
+    padding: 200px 0 112px;
+}
+
+.contact-main-heading {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.contact-main-desc {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 56px;
+}
+
+.contact-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 337px;
+}
+
+.contact-main-info .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-main-info .info-item .desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.contact-main-info .info-item-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.96px;
+}
+
+.contact-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 65px;
+}
+
+.contact-main-content>.left {
+    width: 50%;
+    padding-right: 60px;
+}
+
+.contact-main-content>.left .left-inner {
+    max-width: 380px;
+}
+
+.contact-main-content>.right {
+    width: 50%;
+    padding-top: 11px;
+}
+
+.contact-form-heading {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.contact-form-title {
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+}
+
+.contact-form-title.title-2 {
+    margin-bottom: 33px;
+}
+
+.contact-form-wrapper label {
+    font-size: 16px;
+    color: #979797;
+    margin-bottom: 17px;
+    display: none;
+    line-height: 22px;
+    letter-spacing: -0.64px;
+}
+
+.contact-form-wrapper .form-body input,
+.contact-form-wrapper .form-body textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #2B2B2B;
+    padding: 0 0 9px 0px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contact-form-wrapper .form-body textarea {
+    height: 46px;
+}
+
+.contact-form-wrapper .form-body input:focus,
+.contact-form-wrapper .form-body textarea:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.contact-form-wrapper .form-body input::placeholder,
+.contact-form-wrapper .form-body textarea::placeholder {
+    color: #979797;
+}
+
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px 20px;
+    margin-bottom: 56px;
+}
+
+.contact-form-grid .input-half {
+    grid-column: span 6;
+}
+
+.contact-form-grid .input-half.textarea-group {
+    grid-column: span 9;
+
+}
+
+.contact-form-grid:last-of-type {
+    margin-bottom: 0;
+}
+
+.contact-form-wrapper .services-checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 33px;
+}
+
+.contact-form-wrapper .services-checkbox-wrapper label {
+    display: block;
+}
+
+.contact-form-wrapper .service-radio {
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.contact-form-wrapper .service-radio input {
+    display: none;
+}
+
+.contact-form-wrapper .service-radio span {
+    display: inline-block;
+    padding: 12px 20.5px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 12px;
+    transition: all 0.25s ease;
+    letter-spacing: 0;
+}
+
+.contact-form-wrapper .service-radio:hover span {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.contact-form-wrapper .service-radio input:checked+span {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.contact-form-wrapper .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 2px;
+}
+
+.contact-form-wrapper .checkbox span {
+    flex: 1;
+}
+
+.contact-form-wrapper .checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox input[type="checkbox"]:hover {
+    border-color: #ccc;
+}
+
+.checkbox input[type="checkbox"]:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.contact-form-wrapper .form-footer {
+    margin-top: 31px;
+}
+
+.contact-form-wrapper .form-footer input[type="submit"] {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 11px 42px 11px 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: -1px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-family: "PP Supply Mono";
+    position: relative;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wLjgzNTggMTJMMCAxMS4xNjQyTDkuOTk3MiAxLjJIMy41OTQ2VjBIMTJWOC40NTU4TDEwLjc5OTQgOC40NzM4VjIuMDE5NkwwLjgzNTggMTJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K');
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+}
+
+.contact-form-wrapper .form-footer input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wLjgzNTggMTJMMCAxMS4xNjQyTDkuOTk3MiAxLjJIMy41OTQ2VjBIMTJWOC40NTU4TDEwLjc5OTQgOC40NzM4VjIuMDE5NkwwLjgzNTggMTJaIiBmaWxsPSIjMTUxNTE1Ii8+Cjwvc3ZnPgo=');
+    background-position: right 10px top 12px;
+
+}
